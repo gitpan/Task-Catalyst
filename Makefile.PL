@@ -21,6 +21,7 @@ requires('Catalyst::Plugin::Session::State::URI');
 requires('Catalyst::Model::DBIC');
 requires('Catalyst::Model::DBIC::Plain');
 requires('Catalyst::View::TT');
+requires('Test::WWW::Mechanize::Catalyst');
 requires('DBD::SQLite');
 requires('YAML');
 
