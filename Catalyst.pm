@@ -2,7 +2,7 @@ package Task::Catalyst;
 
 use strict;
 
-our $VERSION = '1.00';
+our $VERSION = '1.10';
 
 =head1 NAME
 

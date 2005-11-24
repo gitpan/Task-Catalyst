@@ -6,23 +6,68 @@ author('Sebastian Riedel');
 version_from('Catalyst.pm');
 license('perl');
 
-requires('Catalyst');
-requires('Catalyst::Plugin::FormValidator');
-requires('Catalyst::Plugin::FormValidator::Simple');
-requires('Catalyst::Plugin::FillInForm');
-requires('Catalyst::Plugin::Prototype');
-requires('Catalyst::Plugin::Singleton');
-requires('Catalyst::Plugin::DefaultEnd');
-requires('Catalyst::Plugin::SubRequest');
-requires('Catalyst::Plugin::Session');
-requires('Catalyst::Plugin::Session::Store::File');
-requires('Catalyst::Plugin::Session::State::Cookie');
-requires('Catalyst::Plugin::Session::State::URI');
-requires('Catalyst::Model::DBIC');
-requires('Catalyst::Model::DBIC::Plain');
-requires('Catalyst::View::TT');
-requires('Test::WWW::Mechanize::Catalyst');
-requires('DBD::SQLite');
-requires('YAML');
+include('ExtUtils::AutoInstall');
 
+requires( 'Catalyst' => '5.57' );
+
+features(
+    'FormValidator Support' => [
+        -default                          => 1,
+        'Catalyst::Plugin::FormValidator' => 0
+    ],
+    'FormValidator::Simple Support' => [
+        -default                                  => 1,
+        'Catalyst::Plugin::FormValidator::Simple' => 0
+    ],
+    'FillInForm Support' => [
+        -default                       => 1,
+        'Catalyst::Plugin::FillInForm' => 0
+    ],
+    'Prototype Support' => [
+        -default                      => 1,
+        'Catalyst::Plugin::Prototype' => 0
+    ],
+    'Singleton Support' => [
+        -default                      => 1,
+        'Catalyst::Plugin::Singleton' => 0
+    ],
+    'DefaultEnd Support' => [
+        -default                       => 1,
+        'Catalyst::Plugin::DefaultEnd' => 0
+    ],
+    'SubRequest Support' => [
+        -default                       => 1,
+        'Catalyst::Plugin::SubRequest' => 0
+    ],
+    'Session Support' => [
+        -default                                   => 1,
+        'Catalyst::Plugin::Session'                => 0,
+        'Catalyst::Plugin::Session::Store::File'   => 0,
+        'Catalyst::Plugin::Session::State::Cookie' => 0,
+        'Catalyst::Plugin::Session::State::URI'    => 0
+    ],
+    'DBIx::Class Support' => [
+        -default                       => 1,
+        'Catalyst::Model::DBIC'        => 0,
+        'Catalyst::Model::DBIC::Plain' => 0
+    ],
+    'Template::Toolkit Support' => [
+        -default             => 1,
+        'Catalyst::View::TT' => 0
+    ],
+    'Test::WWW::Mechanize Support' => [
+        -default                         => 1,
+        'Test::WWW::Mechanize::Catalyst' => 0
+    ],
+    'SQLite Support' => [
+        -default      => 1,
+        'DBD::SQLite' => 0
+    ],
+    'YAML Support' => [
+        -default => 1,
+        'YAML'   => 0
+    ]
+);
+
+auto_install();
 &WriteAll;

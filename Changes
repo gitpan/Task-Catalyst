@@ -1,5 +1,7 @@
 Revision history for Perl extension Task::Catalyst.
 
+1.10  Mon Nov 21 00:00:00 2005
+        - Added ExtUtils::AutoInstall support
 
 1.00  Mon Nov 21 00:00:00 2005
         - Fixed missing Test::WWW::Mechanize::Catalyst

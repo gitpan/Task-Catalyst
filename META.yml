@@ -1,28 +1,11 @@
 name: Task-Catalyst
-version: 1.00
+version: 1.10
 abstract: All you need to start with Catalyst
 author: Sebastian Riedel
 license: perl
 distribution_type: module
 requires:
-  Catalyst: 0
-  Catalyst::Plugin::FormValidator: 0
-  Catalyst::Plugin::FormValidator::Simple: 0
-  Catalyst::Plugin::FillInForm: 0
-  Catalyst::Plugin::Prototype: 0
-  Catalyst::Plugin::Singleton: 0
-  Catalyst::Plugin::DefaultEnd: 0
-  Catalyst::Plugin::SubRequest: 0
-  Catalyst::Plugin::Session: 0
-  Catalyst::Plugin::Session::Store::File: 0
-  Catalyst::Plugin::Session::State::Cookie: 0
-  Catalyst::Plugin::Session::State::URI: 0
-  Catalyst::Model::DBIC: 0
-  Catalyst::Model::DBIC::Plain: 0
-  Catalyst::View::TT: 0
-  Test::WWW::Mechanize::Catalyst: 0
-  DBD::SQLite: 0
-  YAML: 0
+  Catalyst: 5.57
 no_index:
   directory:
     - inc
