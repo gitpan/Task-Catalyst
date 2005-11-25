@@ -8,7 +8,7 @@ license('perl');
 
 include('ExtUtils::AutoInstall');
 
-requires( 'Catalyst' => '5.57' );
+requires( 'Catalyst' => '5.58' );
 
 features(
     'FormValidator Support' => [
@@ -45,6 +45,10 @@ features(
         'Catalyst::Plugin::Session::Store::File'   => 0,
         'Catalyst::Plugin::Session::State::Cookie' => 0,
         'Catalyst::Plugin::Session::State::URI'    => 0
+    ],
+    'I18N Support' => [
+        -default                 => 1,
+        'Catalyst::Plugin::I18N' => 0
     ],
     'DBIx::Class Support' => [
         -default                       => 1,

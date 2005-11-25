@@ -2,7 +2,7 @@ package Task::Catalyst;
 
 use strict;
 
-our $VERSION = '1.10';
+our $VERSION = '1.20';
 
 =head1 NAME
 
@@ -39,6 +39,8 @@ L<Catalyst::Plugin::Session::Store::File>
 L<Catalyst::Plugin::Session::State::Cookie>
 
 L<Catalyst::Plugin::Session::State::URI>
+
+L<Catalyst::Plugin::I18N>
 
 L<Catalyst::Model::DBIC::Plain>
 
