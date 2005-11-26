@@ -50,6 +50,14 @@ features(
         -default                 => 1,
         'Catalyst::Plugin::I18N' => 0
     ],
+    'XMLRPC Support' => [
+        -default                   => 1,
+        'Catalyst::Plugin::XMLRPC' => 0
+    ],
+    'Pluggable Application Support' => [
+        -default                      => 1,
+        'Catalyst::Plugin::Pluggable' => 0
+    ],
     'DBIx::Class Support' => [
         -default                       => 1,
         'Catalyst::Model::DBIC'        => 0,
