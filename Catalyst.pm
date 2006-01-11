@@ -2,7 +2,7 @@ package Task::Catalyst;
 
 use strict;
 
-our $VERSION = '1.40';
+our $VERSION = '1.50';
 
 =head1 NAME
 
@@ -17,6 +17,8 @@ C<perl -MCPAN -e 'install Task::Catalyst'>
 Installs everything you need to write serious Catalyst applications.
 
 L<Catalyst>
+
+L<Catalyst::Log::Log4perl>
 
 L<Catalyst::Plugin::HTML::Widget>
 

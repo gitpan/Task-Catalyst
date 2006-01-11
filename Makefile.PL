@@ -11,6 +11,10 @@ include('ExtUtils::AutoInstall');
 requires( 'Catalyst' => '5.61' );
 
 features(
+    'Log4perl Support' => [
+        -default                  => 1,
+        'Catalyst::Log::Log4perl' => 0
+    ],
     'HTML::Widget Support' => [
         -default                         => 1,
         'Catalyst::Plugin::HTML::Widget' => 0
