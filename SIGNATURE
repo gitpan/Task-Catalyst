@@ -1,0 +1,43 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.51.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 e506ec43d7a900f80c05100fba0a388ff9d8dba9 Catalyst.pm
+SHA1 5f11afd74849833fc3930f48b925ce7039ee9ce1 Changes
+SHA1 0e90772655ef43d439446480362bf54b1bfb15d7 MANIFEST
+SHA1 5250a9f1111ad63c6ef126f574e35ea186900b8c META.yml
+SHA1 a40c5c2685d4907f6867ac01b61c89dd15767233 Makefile.PL
+SHA1 99a39f35b8b4903f972c11330c16043c259117a0 inc/ExtUtils/AutoInstall.pm
+SHA1 4ff66d21679dcee70c7e940cb21b3a3c03f332b5 inc/Module/AutoInstall.pm
+SHA1 6975f5f1830d951179dd9466e450bdf372ee99c3 inc/Module/Install.pm
+SHA1 0fe8117bb54a818f0ea01f4f92223b81ff04f223 inc/Module/Install/AutoInstall.pm
+SHA1 05153f7b70e9501d54b3facb0bc8ee26b4966d6f inc/Module/Install/Base.pm
+SHA1 0042521215c263d69885b45d45cea00689270aca inc/Module/Install/Can.pm
+SHA1 427e2feb48202adfd58eeb7c583b69deac43d792 inc/Module/Install/Fetch.pm
+SHA1 dd33db63e1b8f9ea3be0031889b9def9ac5a3fd2 inc/Module/Install/Include.pm
+SHA1 53ec499a40338066962b8d27f2e5a8c1de285bb1 inc/Module/Install/Makefile.pm
+SHA1 226436c6ddd5dd62a36a1e81086e76c7d5db8495 inc/Module/Install/Metadata.pm
+SHA1 d657161090f078b49b9035db383b6d2eb26561ff inc/Module/Install/Win32.pm
+SHA1 fca2129e567b9dbbef5cc4a216e436aae9717824 inc/Module/Install/WriteAll.pm
+SHA1 24ee045ecfccc1fe04fcfd541888c64fc8b93e65 t/01use.t
+SHA1 86d255a7c9f065a13049108362c949b3e35a4c24 t/02pod.t
+SHA1 e923679a1bbd8eb8f727e46f5906af25de27ec97 t/03podcoverage.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (Darwin)
+
+iD8DBQFDxHlXuYuAvGwCjGIRAoXtAKCZbRVfhaz4IBERDT3Iu6I9+L8JfQCgjryP
+e42jvnRtj4zguatmAI85EhQ=
+=SDdR
+-----END PGP SIGNATURE-----

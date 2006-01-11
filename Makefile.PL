@@ -8,20 +8,16 @@ license('perl');
 
 include('ExtUtils::AutoInstall');
 
-requires( 'Catalyst' => '5.58' );
+requires( 'Catalyst' => '5.61' );
 
 features(
-    'FormValidator Support' => [
-        -default                          => 1,
-        'Catalyst::Plugin::FormValidator' => 0
+    'HTML::Widget Support' => [
+        -default                         => 1,
+        'Catalyst::Plugin::HTML::Widget' => 0
     ],
-    'FormValidator::Simple Support' => [
-        -default                                  => 1,
-        'Catalyst::Plugin::FormValidator::Simple' => 0
-    ],
-    'FillInForm Support' => [
+    'Stacktrace Advanced Debugging Support' => [
         -default                       => 1,
-        'Catalyst::Plugin::FillInForm' => 0
+        'Catalyst::Plugin::StackTrace' => 0
     ],
     'Prototype Support' => [
         -default                      => 1,
@@ -45,6 +41,14 @@ features(
         'Catalyst::Plugin::Session::Store::File'   => 0,
         'Catalyst::Plugin::Session::State::Cookie' => 0,
         'Catalyst::Plugin::Session::State::URI'    => 0
+    ],
+    'Authentication/Authorization Support' => [
+        -default                                            => 1,
+        'Catalyst::Plugin::Authentication'                  => 0,
+        'Catalyst::Plugin::Authentication::Store::DBIC'     => 0,
+        'Catalyst::Plugin::Authentication::Store::Htpasswd' => 0,
+        'Catalyst::Plugin::Authorization::ACL'              => 0,
+        'Catalyst::Plugin::Authorization::Roles'            => 0,
     ],
     'I18N Support' => [
         -default                 => 1,

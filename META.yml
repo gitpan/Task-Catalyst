@@ -1,12 +1,12 @@
 name: Task-Catalyst
-version: 1.30
+version: 1.40
 abstract: All you need to start with Catalyst
 author: Sebastian Riedel
 license: perl
 distribution_type: module
 requires:
-  Catalyst: 5.58
+  Catalyst: 5.61
 no_index:
   directory:
     - inc
-generated_by: Module::Install version 0.39
+generated_by: Module::Install version 0.45

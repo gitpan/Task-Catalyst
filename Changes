@@ -1,5 +1,12 @@
 Revision history for Perl extension Task::Catalyst.
 
+1.40  Wed Jan 11 00:00:00 2006
+        - Updated
+
+1.30  Mon Nov 21 00:00:00 2005
+        - Added Catalyst::Plugin::XMLRPC
+        - Added Catalyst::Plugin::Pluggable
+
 1.20  Mon Nov 21 00:00:00 2005
         - Added Catalyst::Plugin::I18N
 

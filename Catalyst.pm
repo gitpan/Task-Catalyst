@@ -2,7 +2,7 @@ package Task::Catalyst;
 
 use strict;
 
-our $VERSION = '1.30';
+our $VERSION = '1.40';
 
 =head1 NAME
 
@@ -18,11 +18,9 @@ Installs everything you need to write serious Catalyst applications.
 
 L<Catalyst>
 
-L<Catalyst::Plugin::FormValidator>
+L<Catalyst::Plugin::HTML::Widget>
 
-L<Catalyst::Plugin::FormValidator::Simple>
-
-L<Catalyst::Plugin::FillInForm>
+L<Catalyst::Plugin::StackTrace>
 
 L<Catalyst::Plugin::Prototype>
 
@@ -39,6 +37,16 @@ L<Catalyst::Plugin::Session::Store::File>
 L<Catalyst::Plugin::Session::State::Cookie>
 
 L<Catalyst::Plugin::Session::State::URI>
+
+L<Catalyst::Plugin::Authentication>
+
+L<Catalyst::Plugin::Authentication::Store::DBIC>
+
+L<Catalyst::Plugin::Authentication::Store::Htpasswd>
+
+L<Catalyst::Plugin::Authorization::ACL>
+
+L<Catalyst::Plugin::Authorization::Roles>
 
 L<Catalyst::Plugin::I18N>
 
