@@ -2,7 +2,7 @@ package Task::Catalyst;
 
 use strict;
 
-our $VERSION = '1.50';
+our $VERSION = '1.60';
 
 =head1 NAME
 
@@ -65,8 +65,6 @@ L<Catalyst::View::TT>
 L<Test::WWW::Mechanize::Catalyst>
 
 L<DBD::SQLite>
-
-L<YAML>
 
 =head1 AUTHOR
 

@@ -8,15 +8,17 @@ license('perl');
 
 include('ExtUtils::AutoInstall');
 
-requires( 'Catalyst' => '5.61' );
+requires( 'Catalyst' => '5.64' );
 
 features(
     'Log4perl Support' => [
         -default                  => 1,
+        'Params::Validate'        => 0,
         'Catalyst::Log::Log4perl' => 0
     ],
     'HTML::Widget Support' => [
         -default                         => 1,
+        'Date::Calc'                     => 0,
         'Catalyst::Plugin::HTML::Widget' => 0
     ],
     'Stacktrace Advanced Debugging Support' => [
@@ -58,10 +60,12 @@ features(
         -default                 => 1,
         'Catalyst::Plugin::I18N' => 0
     ],
-    'XMLRPC Support' => [
-        -default                   => 1,
+'XMLRPC Support (WARNING: requires XML::Parser which requires a C compiler and expat to be installed!)'
+      => [
+        -default                   => 0,
+        'XML::Parser'              => 0,
         'Catalyst::Plugin::XMLRPC' => 0
-    ],
+      ],
     'Pluggable Application Support' => [
         -default                      => 1,
         'Catalyst::Plugin::Pluggable' => 0
@@ -79,13 +83,9 @@ features(
         -default                         => 1,
         'Test::WWW::Mechanize::Catalyst' => 0
     ],
-    'SQLite Support' => [
-        -default      => 1,
+    'SQLite Support (WARNING: requires a C compiler!)' => [
+        -default      => 0,
         'DBD::SQLite' => 0
-    ],
-    'YAML Support' => [
-        -default => 1,
-        'YAML'   => 0
     ]
 );
 
