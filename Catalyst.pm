@@ -2,7 +2,7 @@ package Task::Catalyst;
 
 use strict;
 
-our $VERSION = '1.60';
+our $VERSION = '1.70';
 
 =head1 NAME
 
@@ -56,9 +56,7 @@ L<Catalyst::Plugin::XMLRPC>
 
 L<Catalyst::Plugin::Pluggable>
 
-L<Catalyst::Model::DBIC::Plain>
-
-L<Catalyst::Model::DBIC>
+L<Catalyst::Model::DBIC::Schema>
 
 L<Catalyst::View::TT>
 
