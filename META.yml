@@ -8,4 +8,6 @@ no_index:
   directory: 
     - inc
     - t
-version: 1.80
+requires: 
+  Catalyst: 5.65
+version: 1.90

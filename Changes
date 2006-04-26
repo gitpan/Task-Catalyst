@@ -1,7 +1,7 @@
 Revision history for Perl extension Task::Catalyst.
 
-1.80
-        - Deprecated module
+1.90
+        - Small fix
 
 1.70  Wed Jan 11 00:00:00 2006
         - Updated again
