@@ -1,1 +1,68 @@
-DEPRECATED!
+NAME
+    Task::Catalyst - All you need to start with Catalyst
+
+SYNOPSIS
+    "perl -MCPAN -e 'install Task::Catalyst'"
+
+DESCRIPTION
+    Installs everything you need to write serious Catalyst applications.
+
+    Catalyst
+
+    Catalyst::Devel
+
+    Catalyst::Engine::Apache
+
+    FCGI
+
+    FCGI::ProcManager
+
+    PAR
+
+    Catalyst::Log::Log4perl
+
+    Catalyst::Plugin::HTML::Widget
+
+    Catalyst::Controller::FormBuilder
+
+    Catalyst::Plugin::StackTrace
+
+    Catalyst::Plugin::Prototype
+
+    Catalyst::Plugin::Session
+
+    Catalyst::Plugin::Session::Store::File
+
+    Catalyst::Plugin::Session::State::Cookie
+
+    Catalyst::Plugin::Session::State::URI
+
+    Catalyst::Plugin::Authentication
+
+    Catalyst::Plugin::Authentication::Store::DBIC
+
+    Catalyst::Plugin::Authentication::Store::Htpasswd
+
+    Catalyst::Plugin::Authorization::ACL
+
+    Catalyst::Plugin::Authorization::Roles
+
+    Catalyst::Plugin::I18N
+
+    Catalyst::Controller::BindLex
+
+    Catalyst::Model::DBIC::Schema
+
+    Catalyst::View::TT
+
+    Test::WWW::Mechanize::Catalyst
+
+    DBD::SQLite
+
+AUTHOR
+    The Catalyst Core Team - see http://catalyst.perl.org/
+
+LICENSE
+    This library is free software, you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
