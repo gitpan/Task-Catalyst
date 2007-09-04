@@ -1,5 +1,8 @@
 Revision history for Perl extension Task::Catalyst.
 
+2.0001 Wed 31 Aug 2007
+	- Fixed Dependency for formbuilder controller
+
 2.0000 Wed 28 Mar 2007
         - General cleanup
         - Updated to reflect the 5.7xxx release

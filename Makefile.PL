@@ -1,4 +1,4 @@
-use inc::Module::Install 0.64;
+use inc::Module::Install 0.67;
 
 name     'Task-Catalyst';
 all_from 'lib/Task/Catalyst.pm';
@@ -8,7 +8,7 @@ requires 'Catalyst::Devel' => '1.02';
 
 feature 'Apache/mod_perl Support',
   -default                   => 1,
-  'Catalyst::Engine::Apache' => '1.05';
+  'Catalyst::Engine::Apache' => '1.09';
 
 feature 'FastCGI Support',
     -default            => 1,
@@ -31,7 +31,7 @@ feature 'HTML::Widget Support',
 
 feature 'FormBuilder Support',
     -default                        => 1,
-    'Catalyst::Controller::FormBuilder' => '1.06';
+    'Catalyst::Controller::FormBuilder' => '0.03';
 
 feature 'Stacktrace Advanced Debugging Support',
     -default                       => 1,
