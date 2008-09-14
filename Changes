@@ -1,5 +1,9 @@
 Revision history for Perl extension Task::Catalyst.
 
+3.0000
+    - Switch from HTML::Widget to FormFu
+    - Remove bindlex
+
 2.0001 Wed 31 Aug 2007
 	- Fixed Dependency for formbuilder controller
 

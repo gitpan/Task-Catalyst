@@ -24,22 +24,17 @@ feature 'Log4perl Support',
     'Params::Validate'        => 0,
     'Catalyst::Log::Log4perl' => '0.1';
 
-feature 'HTML::Widget Support',
+feature 'HTML::FormFu Support',
     -default                         => 1,
-    'Date::Calc'                     => 0,
-    'Catalyst::Plugin::HTML::Widget' => '1.1';
+    'Catalyst::Controller::HTML::FormFu' => '0.03';
 
 feature 'FormBuilder Support',
-    -default                        => 1,
+    -default                        => 0,
     'Catalyst::Controller::FormBuilder' => '0.03';
 
 feature 'Stacktrace Advanced Debugging Support',
     -default                       => 1,
     'Catalyst::Plugin::StackTrace' => '0.02';
-
-feature 'Prototype Support',
-    -default                      => 1,
-    'Catalyst::Plugin::Prototype' => '1.32';
 
 feature 'Session Support',
     -default                                   => 1,
@@ -51,18 +46,13 @@ feature 'Session Support',
 feature 'Authentication/Authorization Support',
     -default                                            => 1,
     'Catalyst::Plugin::Authentication'                  => '0.05',
-    'Catalyst::Plugin::Authentication::Store::DBIC'     => '0.04',
-    'Catalyst::Plugin::Authentication::Store::Htpasswd' => '0.02',
+    'Catalyst::Authentication::Store::DBIx::Class'      => '0.04',
     'Catalyst::Plugin::Authorization::ACL'              => '0.06',
     'Catalyst::Plugin::Authorization::Roles'            => '0.03';
 
 feature 'I18N Support',
     -default                 => 1,
     'Catalyst::Plugin::I18N' => '0.05';
-
-feature 'BindLex Support',
-    -default                => 1,
-    'Catalyst::Controller::BindLex' => '0.03';
 
 feature 'DBIx::Class Support',
     -default                        => 1,

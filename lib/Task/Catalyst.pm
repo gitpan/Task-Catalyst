@@ -3,7 +3,7 @@ package Task::Catalyst;
 use strict;
 use warnings;
 
-our $VERSION = '2.0001';
+our $VERSION = '3.0000';
 
 =head1 NAME
 
