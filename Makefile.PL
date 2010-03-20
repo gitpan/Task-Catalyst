@@ -1,74 +1,71 @@
-use inc::Module::Install 0.67;
 
-name     'Task-Catalyst';
-all_from 'lib/Task/Catalyst.pm';
+use strict;
+use warnings;
 
-requires 'Catalyst'        => '5.7007';
-requires 'Catalyst::Devel' => '1.02';
 
-feature 'Apache/mod_perl Support',
-  -default                   => 1,
-  'Catalyst::Engine::Apache' => '1.09';
 
-feature 'FastCGI Support',
-    -default            => 1,
-    'FCGI'              => 0,
-    'FCGI::ProcManager' => 0;
+use ExtUtils::MakeMaker 6.11;
 
-feature 'PAR Support',
-    -default => 1,
-    'PAR'    => 0;
 
-feature 'Log4perl Support',
-    -default                  => 1,
-    'Params::Validate'        => 0,
-    'Catalyst::Log::Log4perl' => '0.1';
 
-feature 'HTML::FormFu Support',
-    -default                         => 1,
-    'Catalyst::Controller::HTML::FormFu' => '0.03';
+my %WriteMakefileArgs = (
+                       'test' => {
+                                   'TESTS' => 't/*.t'
+                                 },
+                       'NAME' => 'Task::Catalyst',
+                       'DISTNAME' => 'Task-Catalyst',
+                       'CONFIGURE_REQUIRES' => {
+                                                 'ExtUtils::MakeMaker' => '6.11'
+                                               },
+                       'AUTHOR' => 'Florian Ragwitz <rafl@debian.org>',
+                       'BUILD_REQUIRES' => {},
+                       'ABSTRACT' => 'All you need to start with Catalyst',
+                       'EXE_FILES' => [],
+                       'VERSION' => '4.00',
+                       'PREREQ_PM' => {
+                                        'Catalyst::Authentication::Credential::HTTP' => '0',
+                                        'Catalyst::Plugin::ConfigLoader' => '0',
+                                        'Catalyst::Devel' => '1.26',
+                                        'Catalyst::Plugin::Session::State::Cookie' => '0',
+                                        'CatalystX::Component::Traits' => '0',
+                                        'Catalyst::Action::REST' => '0',
+                                        'Catalyst' => '5.80',
+                                        'Test::WWW::Mechanize::Catalyst' => '0',
+                                        'Catalyst::Controller::ActionRole' => '0',
+                                        'CatalystX::LeakChecker' => '0',
+                                        'local::lib' => '0',
+                                        'Catalyst::Authentication::Store::DBIx::Class' => '0',
+                                        'Catalyst::Engine::PSGI' => '0',
+                                        'Catalyst::ActionRole::ACL' => '0',
+                                        'Catalyst::View::TT' => '0',
+                                        'CatalystX::Profile' => '0',
+                                        'Catalyst::Plugin::Session' => '0',
+                                        'Catalyst::Model::DBIC::Schema' => '0',
+                                        'Catalyst::Model::Adaptor' => '0',
+                                        'Catalyst::Component::InstancePerContext' => '0',
+                                        'FCGI::ProcManager' => '0',
+                                        'CatalystX::REPL' => '0',
+                                        'Catalyst::Plugin::Session::Store::DBIC' => '0',
+                                        'FCGI' => '0',
+                                        'Catalyst::Plugin::Session::Store::BerkeleyDB' => '0',
+                                        'Catalyst::View::Email' => '0',
+                                        'Catalyst::Manual' => '5.80',
+                                        'Catalyst::Plugin::Static::Simple' => '0',
+                                        'CatalystX::SimpleLogin' => '0',
+                                        'Catalyst::Plugin::StackTrace' => '0',
+                                        'Catalyst::Plugin::Unicode::Encoding' => '0',
+                                        'Catalyst::Plugin::I18N' => '0',
+                                        'Catalyst::Engine::HTTP::Prefork' => '0',
+                                        'Catalyst::Plugin::Authentication' => '0'
+                                      },
+                       'LICENSE' => 'perl'
+                     );
 
-feature 'FormBuilder Support',
-    -default                        => 0,
-    'Catalyst::Controller::FormBuilder' => '0.03';
 
-feature 'Stacktrace Advanced Debugging Support',
-    -default                       => 1,
-    'Catalyst::Plugin::StackTrace' => '0.02';
+delete $WriteMakefileArgs{LICENSE}
+  unless eval { ExtUtils::MakeMaker->VERSION(6.31) };
 
-feature 'Session Support',
-    -default                                   => 1,
-    'Catalyst::Plugin::Session'                => '0.05',
-    'Catalyst::Plugin::Session::Store::File'   => '0.07',
-    'Catalyst::Plugin::Session::State::Cookie' => '0.02',
-    'Catalyst::Plugin::Session::State::URI'    => '0.02';
+WriteMakefile(%WriteMakefileArgs);
 
-feature 'Authentication/Authorization Support',
-    -default                                            => 1,
-    'Catalyst::Plugin::Authentication'                  => '0.05',
-    'Catalyst::Authentication::Store::DBIx::Class'      => '0.04',
-    'Catalyst::Plugin::Authorization::ACL'              => '0.06',
-    'Catalyst::Plugin::Authorization::Roles'            => '0.03';
 
-feature 'I18N Support',
-    -default                 => 1,
-    'Catalyst::Plugin::I18N' => '0.05';
 
-feature 'DBIx::Class Support',
-    -default                        => 1,
-    'Catalyst::Model::DBIC::Schema' => '0.08';
-
-feature 'Template::Toolkit Support',
-    -default             => 1,
-    'Catalyst::View::TT' => '0.22';
-
-feature 'Test::WWW::Mechanize Support',
-    -default                         => 1,
-    'Test::WWW::Mechanize::Catalyst' => '0.35';
-
-feature 'SQLite Support (WARNING: requires a C compiler!)',
-    -default      => 0,
-    'DBD::SQLite' => 0;
-
-auto_install;
-WriteAll;

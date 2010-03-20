@@ -1,11 +1,16 @@
 Revision history for Perl extension Task::Catalyst.
 
+4.00 Sat 20 Mar 2010
+        - Make the list of recommended modules up to date regarding the current
+          community standards.
+        - Switch to Dist::Zilla
+
 3.0000
-    - Switch from HTML::Widget to FormFu
-    - Remove bindlex
+        - Switch from HTML::Widget to FormFu
+        - Remove bindlex
 
 2.0001 Wed 31 Aug 2007
-	- Fixed Dependency for formbuilder controller
+        - Fixed Dependency for formbuilder controller
 
 2.0000 Wed 28 Mar 2007
         - General cleanup

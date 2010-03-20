@@ -1,13 +1,23 @@
-package Task::Catalyst;
-
 use strict;
 use warnings;
 
-our $VERSION = '3.0000';
+package Task::Catalyst;
+our $VERSION = '4.00';
+# ABSTRACT: All you need to start with Catalyst
+
+
+1;
+
+__END__
+=pod
 
 =head1 NAME
 
 Task::Catalyst - All you need to start with Catalyst
+
+=head1 VERSION
+
+version 4.00
 
 =head1 SYNOPSIS
 
@@ -17,67 +27,104 @@ C<perl -MCPAN -e 'install Task::Catalyst'>
 
 Installs everything you need to write serious Catalyst applications.
 
-L<Catalyst>
+=head1 TASK CONTENTS
 
-L<Catalyst::Devel>
+=head2 Core Modules
 
-L<Catalyst::Engine::Apache>
+=head3 Catalyst 5.80
 
-L<FCGI>
+=head3 Catalyst::Devel 1.26
 
-L<FCGI::ProcManager>
+=head3 Catalyst::Manual 5.80
 
-L<PAR>
+=head2 Recommended Models
 
-L<Catalyst::Log::Log4perl>
+=head3 Catalyst::Model::Adaptor
 
-L<Catalyst::Plugin::HTML::Widget>
+=head3 Catalyst::Model::DBIC::Schema
 
-L<Catalyst::Controller::FormBuilder>
+=head2 Recommended Views
 
-L<Catalyst::Plugin::StackTrace>
+=head3 Catalyst::View::TT
 
-L<Catalyst::Plugin::Prototype>
+=head3 Catalyst::View::Email
 
-L<Catalyst::Plugin::Session>
+=head2 Recommended Components
 
-L<Catalyst::Plugin::Session::Store::File>
+=head3 Catalyst::Controller::ActionRole
 
-L<Catalyst::Plugin::Session::State::Cookie>
+=head3 CatalystX::Component::Traits
 
-L<Catalyst::Plugin::Session::State::URI>
+=head3 CatalystX::SimpleLogin
 
-L<Catalyst::Plugin::Authentication>
+=head3 Catalyst::Action::REST
 
-L<Catalyst::Plugin::Authentication::Store::DBIC>
+=head3 Catalyst::Component::InstancePerContext
 
-L<Catalyst::Plugin::Authentication::Store::Htpasswd>
+=head2 Session Support
 
-L<Catalyst::Plugin::Authorization::ACL>
+=head3 Catalyst::Plugin::Session
 
-L<Catalyst::Plugin::Authorization::Roles>
+=head3 Catalyst::Plugin::Session::State::Cookie
 
-L<Catalyst::Plugin::I18N>
+=head3 Catalyst::Plugin::Session::Store::BerkeleyDB
 
-L<Catalyst::Controller::BindLex>
+=head3 Catalyst::Plugin::Session::Store::DBIC
 
-L<Catalyst::Model::DBIC::Schema>
+=head2 Authentication and Authorization
 
-L<Catalyst::View::TT>
+=head3 Catalyst::Plugin::Authentication
 
-L<Test::WWW::Mechanize::Catalyst>
+=head3 Catalyst::Authentication::Store::DBIx::Class
 
-L<DBD::SQLite>
+=head3 Catalyst::Authentication::Credential::HTTP
+
+=head3 Catalyst::ActionRole::ACL
+
+=head2 Recommended Plugins
+
+=head3 Catalyst::Plugin::Static::Simple
+
+=head3 Catalyst::Plugin::Unicode::Encoding
+
+=head3 Catalyst::Plugin::I18N
+
+=head3 Catalyst::Plugin::ConfigLoader
+
+=head2 Testing, Debugging and Profiling
+
+=head3 Test::WWW::Mechanize::Catalyst
+
+=head3 Catalyst::Plugin::StackTrace
+
+=head3 CatalystX::REPL
+
+=head3 CatalystX::LeakChecker
+
+=head3 CatalystX::Profile
+
+=head2 Deployment
+
+=head3 FCGI
+
+=head3 FCGI::ProcManager
+
+=head3 Catalyst::Engine::HTTP::Prefork
+
+=head3 Catalyst::Engine::PSGI
+
+=head3 local::lib
 
 =head1 AUTHOR
 
-The Catalyst Core Team - see http://catalyst.perl.org/
+  Florian Ragwitz <rafl@debian.org>
 
-=head1 LICENSE
+=head1 COPYRIGHT AND LICENSE
 
-This library is free software, you can redistribute it and/or modify it under
-the same terms as Perl itself.
+This software is copyright (c) 2010 by Florian Ragwitz.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
 
-1;
