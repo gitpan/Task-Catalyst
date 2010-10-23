@@ -1,5 +1,10 @@
 Revision history for Perl extension Task::Catalyst.
 
+4.01 Sat 23 Oct 2010
+        - Suggest Catalyst::Plugin::Session::Store::File instead of
+          Catalyst::Plugin::Session::Store::BerkeleyDB as that's much easier to
+          install on many systems.
+
 4.00 Sat 20 Mar 2010
         - Make the list of recommended modules up to date regarding the current
           community standards.

@@ -4,8 +4,9 @@ author:
   - 'Florian Ragwitz <rafl@debian.org>'
 build_requires: {}
 configure_requires:
-  ExtUtils::MakeMaker: 6.11
-generated_by: 'Dist::Zilla version 1.100711'
+  ExtUtils::MakeMaker: 6.31
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.102342, CPAN::Meta::Converter version 2.102400'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -30,8 +31,8 @@ requires:
   Catalyst::Plugin::I18N: 0
   Catalyst::Plugin::Session: 0
   Catalyst::Plugin::Session::State::Cookie: 0
-  Catalyst::Plugin::Session::Store::BerkeleyDB: 0
   Catalyst::Plugin::Session::Store::DBIC: 0
+  Catalyst::Plugin::Session::Store::File: 0
   Catalyst::Plugin::StackTrace: 0
   Catalyst::Plugin::Static::Simple: 0
   Catalyst::Plugin::Unicode::Encoding: 0
@@ -46,4 +47,4 @@ requires:
   FCGI::ProcManager: 0
   Test::WWW::Mechanize::Catalyst: 0
   local::lib: 0
-version: 4.00
+version: 4.01

@@ -2,7 +2,9 @@ use strict;
 use warnings;
 
 package Task::Catalyst;
-our $VERSION = '4.00';
+BEGIN {
+  $Task::Catalyst::VERSION = '4.01';
+}
 # ABSTRACT: All you need to start with Catalyst
 
 
@@ -17,7 +19,7 @@ Task::Catalyst - All you need to start with Catalyst
 
 =head1 VERSION
 
-version 4.00
+version 4.01
 
 =head1 SYNOPSIS
 
@@ -31,93 +33,93 @@ Installs everything you need to write serious Catalyst applications.
 
 =head2 Core Modules
 
-=head3 Catalyst 5.80
+=head3 L<Catalyst> 5.80
 
-=head3 Catalyst::Devel 1.26
+=head3 L<Catalyst::Devel> 1.26
 
-=head3 Catalyst::Manual 5.80
+=head3 L<Catalyst::Manual> 5.80
 
 =head2 Recommended Models
 
-=head3 Catalyst::Model::Adaptor
+=head3 L<Catalyst::Model::Adaptor>
 
-=head3 Catalyst::Model::DBIC::Schema
+=head3 L<Catalyst::Model::DBIC::Schema>
 
 =head2 Recommended Views
 
-=head3 Catalyst::View::TT
+=head3 L<Catalyst::View::TT>
 
-=head3 Catalyst::View::Email
+=head3 L<Catalyst::View::Email>
 
 =head2 Recommended Components
 
-=head3 Catalyst::Controller::ActionRole
+=head3 L<Catalyst::Controller::ActionRole>
 
-=head3 CatalystX::Component::Traits
+=head3 L<CatalystX::Component::Traits>
 
-=head3 CatalystX::SimpleLogin
+=head3 L<CatalystX::SimpleLogin>
 
-=head3 Catalyst::Action::REST
+=head3 L<Catalyst::Action::REST>
 
-=head3 Catalyst::Component::InstancePerContext
+=head3 L<Catalyst::Component::InstancePerContext>
 
 =head2 Session Support
 
-=head3 Catalyst::Plugin::Session
+=head3 L<Catalyst::Plugin::Session>
 
-=head3 Catalyst::Plugin::Session::State::Cookie
+=head3 L<Catalyst::Plugin::Session::State::Cookie>
 
-=head3 Catalyst::Plugin::Session::Store::BerkeleyDB
+=head3 L<Catalyst::Plugin::Session::Store::File>
 
-=head3 Catalyst::Plugin::Session::Store::DBIC
+=head3 L<Catalyst::Plugin::Session::Store::DBIC>
 
 =head2 Authentication and Authorization
 
-=head3 Catalyst::Plugin::Authentication
+=head3 L<Catalyst::Plugin::Authentication>
 
-=head3 Catalyst::Authentication::Store::DBIx::Class
+=head3 L<Catalyst::Authentication::Store::DBIx::Class>
 
-=head3 Catalyst::Authentication::Credential::HTTP
+=head3 L<Catalyst::Authentication::Credential::HTTP>
 
-=head3 Catalyst::ActionRole::ACL
+=head3 L<Catalyst::ActionRole::ACL>
 
 =head2 Recommended Plugins
 
-=head3 Catalyst::Plugin::Static::Simple
+=head3 L<Catalyst::Plugin::Static::Simple>
 
-=head3 Catalyst::Plugin::Unicode::Encoding
+=head3 L<Catalyst::Plugin::Unicode::Encoding>
 
-=head3 Catalyst::Plugin::I18N
+=head3 L<Catalyst::Plugin::I18N>
 
-=head3 Catalyst::Plugin::ConfigLoader
+=head3 L<Catalyst::Plugin::ConfigLoader>
 
 =head2 Testing, Debugging and Profiling
 
-=head3 Test::WWW::Mechanize::Catalyst
+=head3 L<Test::WWW::Mechanize::Catalyst>
 
-=head3 Catalyst::Plugin::StackTrace
+=head3 L<Catalyst::Plugin::StackTrace>
 
-=head3 CatalystX::REPL
+=head3 L<CatalystX::REPL>
 
-=head3 CatalystX::LeakChecker
+=head3 L<CatalystX::LeakChecker>
 
-=head3 CatalystX::Profile
+=head3 L<CatalystX::Profile>
 
 =head2 Deployment
 
-=head3 FCGI
+=head3 L<FCGI>
 
-=head3 FCGI::ProcManager
+=head3 L<FCGI::ProcManager>
 
-=head3 Catalyst::Engine::HTTP::Prefork
+=head3 L<Catalyst::Engine::HTTP::Prefork>
 
-=head3 Catalyst::Engine::PSGI
+=head3 L<Catalyst::Engine::PSGI>
 
-=head3 local::lib
+=head3 L<local::lib>
 
 =head1 AUTHOR
 
-  Florian Ragwitz <rafl@debian.org>
+Florian Ragwitz <rafl@debian.org>
 
 =head1 COPYRIGHT AND LICENSE
 
