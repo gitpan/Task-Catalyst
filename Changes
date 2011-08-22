@@ -1,5 +1,9 @@
 Revision history for Perl extension Task::Catalyst.
 
+4.02 Mon 22 Aug 2011
+        - Stop installing the old PreFork engine and start installing Starman
+          for Catalyst 5.9
+
 4.01 Sat 23 Oct 2010
         - Suggest Catalyst::Plugin::Session::Store::File instead of
           Catalyst::Plugin::Session::Store::BerkeleyDB as that's much easier to

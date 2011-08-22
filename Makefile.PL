@@ -4,16 +4,16 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'All you need to start with Catalyst',
-  'AUTHOR' => 'Florian Ragwitz <rafl@debian.org>',
+  'AUTHOR' => 'Sebastian Riedel <sri@oook.de>, Brian Cassidy <bricas@cpan.org>, Andy Grundman <andy@hybridized.org>, Marcus Ramberg <mramberg@cpan.org>, Tomas Doran <bobtfish@bobtfish.net>, Rafael Kitover <rkitover@io.com>, Florian Ragwitz <rafl@debian.org>',
   'BUILD_REQUIRES' => {},
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.30'
   },
   'DISTNAME' => 'Task-Catalyst',
   'EXE_FILES' => [],
@@ -28,8 +28,6 @@ my %WriteMakefileArgs = (
     'Catalyst::Component::InstancePerContext' => '0',
     'Catalyst::Controller::ActionRole' => '0',
     'Catalyst::Devel' => '1.26',
-    'Catalyst::Engine::HTTP::Prefork' => '0',
-    'Catalyst::Engine::PSGI' => '0',
     'Catalyst::Manual' => '5.80',
     'Catalyst::Model::Adaptor' => '0',
     'Catalyst::Model::DBIC::Schema' => '0',
@@ -52,10 +50,11 @@ my %WriteMakefileArgs = (
     'CatalystX::SimpleLogin' => '0',
     'FCGI' => '0',
     'FCGI::ProcManager' => '0',
+    'Starman' => '0',
     'Test::WWW::Mechanize::Catalyst' => '0',
     'local::lib' => '0'
   },
-  'VERSION' => '4.01',
+  'VERSION' => '4.02',
   'test' => {
     'TESTS' => 't/*.t'
   }

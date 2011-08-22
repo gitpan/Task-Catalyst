@@ -3,7 +3,7 @@ use warnings;
 
 package Task::Catalyst;
 BEGIN {
-  $Task::Catalyst::VERSION = '4.01';
+  $Task::Catalyst::VERSION = '4.02';
 }
 # ABSTRACT: All you need to start with Catalyst
 
@@ -19,7 +19,7 @@ Task::Catalyst - All you need to start with Catalyst
 
 =head1 VERSION
 
-version 4.01
+version 4.02
 
 =head1 SYNOPSIS
 
@@ -111,19 +111,47 @@ Installs everything you need to write serious Catalyst applications.
 
 =head3 L<FCGI::ProcManager>
 
-=head3 L<Catalyst::Engine::HTTP::Prefork>
-
-=head3 L<Catalyst::Engine::PSGI>
+=head3 L<Starman>
 
 =head3 L<local::lib>
 
-=head1 AUTHOR
+=head1 AUTHORS
+
+=over 4
+
+=item *
+
+Sebastian Riedel <sri@oook.de>
+
+=item *
+
+Brian Cassidy <bricas@cpan.org>
+
+=item *
+
+Andy Grundman <andy@hybridized.org>
+
+=item *
+
+Marcus Ramberg <mramberg@cpan.org>
+
+=item *
+
+Tomas Doran <bobtfish@bobtfish.net>
+
+=item *
+
+Rafael Kitover <rkitover@io.com>
+
+=item *
 
 Florian Ragwitz <rafl@debian.org>
 
+=back
+
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Florian Ragwitz.
+This software is copyright (c) 2011 by Sebastian Riedel.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
